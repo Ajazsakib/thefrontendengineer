@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import "./contactMe.css";
 import { ToastContainer, toast } from "react-toastify";
 import { contactDetails } from "../../data/contactMe";
-import { ColorRing } from "react-loader-spinner";
+// import { ColorRing } from "react-loader-spinner";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { profileLinks } from "../../data/profileLinks";
@@ -20,60 +20,60 @@ const ContactMe = (e) =>
   const [email, setEmail] = useState("");
 
   const [message, setMessage] = useState("");
-  const [isFormSubmitting, setIsFormSubmitting] = useState(false);
-  const [disableSubmit, setDisableSubmit] = useState(true);
+  // const [isFormSubmitting, setIsFormSubmitting] = useState(false);
+  // const [disableSubmit, setDisableSubmit] = useState(true);
 
-  const isValidEmail = (email) =>
-  {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
+  // const isValidEmail = (email) =>
+  // {
+  //   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //   return emailRegex.test(email);
+  // };
 
-  useEffect(() =>
-  {
-    if (name && isValidEmail(email) && message) {
-      setDisableSubmit(false);
-    } else {
-      setDisableSubmit(true);
-    }
-  }, [name, email, message]);
+  // useEffect(() =>
+  // {
+  //   if (name && isValidEmail(email) && message) {
+  //     setDisableSubmit(false);
+  //   } else {
+  //     setDisableSubmit(true);
+  //   }
+  // }, [name, email, message]);
 
-  const resetData = () =>
-  {
-    setName("");
-    setEmail("");
-    setMessage("");
-    setIsFormSubmitting(false);
-    setDisableSubmit(true);
-  };
+  // const resetData = () =>
+  // {
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  //   setIsFormSubmitting(false);
+  //   setDisableSubmit(true);
+  // };
 
-  const sendEmail = (e) =>
-  {
-    e.preventDefault();
-    setIsFormSubmitting(true);
+  // const sendEmail = (e) =>
+  // {
+  //   e.preventDefault();
+  //   setIsFormSubmitting(true);
 
-    emailjs
-      .sendForm(
-        EmailJS_SERVICE_ID,
-        EmailJS_TEMPLATE_ID,
-        form.current,
-        EmailJS_PUBLIC_KEY
-      )
-      .then(
-        (result) =>
-        {
-          resetData();
-          setIsFormSubmitting(false);
-          toast.success("Email sent successfully!");
-        },
-        (error) =>
-        {
-          toast.error("Error sending email, please try again later!");
-          setIsFormSubmitting(false);
-        }
-      );
-    e.target.reset();
-  };
+  //   emailjs
+  //     .sendForm(
+  //       EmailJS_SERVICE_ID,
+  //       EmailJS_TEMPLATE_ID,
+  //       form.current,
+  //       EmailJS_PUBLIC_KEY
+  //     )
+  //     .then(
+  //       (result) =>
+  //       {
+  //         resetData();
+  //         setIsFormSubmitting(false);
+  //         toast.success("Email sent successfully!");
+  //       },
+  //       (error) =>
+  //       {
+  //         toast.error("Error sending email, please try again later!");
+  //         setIsFormSubmitting(false);
+  //       }
+  //     );
+  //   e.target.reset();
+  // };
 
   return (
     <div id="contact" className="reachme-container">

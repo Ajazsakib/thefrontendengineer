@@ -1,6 +1,6 @@
 import React from "react";
 import "./achievements.css";
-import { achievements } from "../../data/achievements";
+// import { achievements } from "../../data/achievements";
 import { projects } from "../../data/projects";
 import vlcc from "../../assets/vlcc.png";
 import tg from "../../assets/tg.png";

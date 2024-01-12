@@ -1,25 +1,25 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./contactMe.css";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, } from "react-toastify";
 import { contactDetails } from "../../data/contactMe";
 // import { ColorRing } from "react-loader-spinner";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import { profileLinks } from "../../data/profileLinks";
-import
-{
-  EmailJS_SERVICE_ID,
-  EmailJS_TEMPLATE_ID,
-  EmailJS_PUBLIC_KEY,
-} from "../../utils/constants";
+// import
+// {
+//   EmailJS_SERVICE_ID,
+//   EmailJS_TEMPLATE_ID,
+//   EmailJS_PUBLIC_KEY,
+// } from "../../utils/constants";
 
 const ContactMe = (e) =>
 {
-  const form = useRef();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  // const form = useRef();
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
 
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
   // const [isFormSubmitting, setIsFormSubmitting] = useState(false);
   // const [disableSubmit, setDisableSubmit] = useState(true);
 

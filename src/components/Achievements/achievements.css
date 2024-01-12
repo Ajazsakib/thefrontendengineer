@@ -1,0 +1,75 @@
+#achievements {
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.achievement-text {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.achievement-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.my-achievement {
+  background-color: #ffffff;
+  position: relative;
+  width: 280px;
+  border-radius: 10px !important;
+  height: 240px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s ease;
+  margin: 5px;
+}
+
+.my-achievement:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 20%) !important;
+  /* transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; */
+ 
+  transition: 2s;
+}
+
+.my-achievement .img {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-achievement .text {
+  background-color: #ededed;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-achievement .text a {
+  color: #000000;
+}
+.my-achievement .text a img {
+  margin-right: 12px;
+  width: 20px;
+}
+.achievement-name {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.achievement-desc {
+  font-size: 13px;
+  color: #080a0a;
+  font-weight: 600;
+}
